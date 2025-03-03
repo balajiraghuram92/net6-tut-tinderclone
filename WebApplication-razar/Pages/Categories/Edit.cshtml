@@ -1,0 +1,35 @@
+﻿@page
+@model WebApplication_razar.Pages.Categories.EditModel 
+
+<form method="post">
+    <input asp-for="categ.Id" hidden />
+    <div class="border p-3 mt-4">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div></div>
+            <span style="font-size: 1.2rem; margin-left: 20px;">Update Category</span>
+            <a asp-page="/Categories/Index" class="btn btn-primary" style="padding: 5px 10px; font-size: 0.8rem; margin-right: 20px;">
+                <i class="bi bi-x-circle-fill"></i>
+            </a>
+        </div>
+        @* <div asp-validation-summary="ModelOnly"></div> *@
+        <div class="mb-3 row">
+            <label asp-for="categ.Name" class="p-0"></label>
+            <input asp-for="categ.Name" type="text" class="form-control" />
+            <span asp-validation-for="categ.Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
+            <label asp-for="categ.DIsplayOrder" class="p-0"></label>
+            <input asp-for="categ.DIsplayOrder" type="number" class="form-control" />
+            <span asp-validation-for="categ.DIsplayOrder" class="text-danger"></span>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-primary" style="width: 150px;">Update</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

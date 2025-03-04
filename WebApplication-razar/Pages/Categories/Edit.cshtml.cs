@@ -23,6 +23,7 @@ namespace WebApplication_razar.Pages.Categories
         {
             _db.Categories.Update(categ);
             _db.SaveChanges();
+            TempData["success"] = "Category updated succussfully";
             return RedirectToPage("Index");
 
         }

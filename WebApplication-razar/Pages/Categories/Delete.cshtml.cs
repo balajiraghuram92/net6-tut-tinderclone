@@ -26,6 +26,7 @@ namespace WebApplication_razar.Pages.Categories
                 _db.Categories.Remove(categ);
                 _db.SaveChanges();
             }
+            TempData["success"] = "Category deleted succussfully";
             return RedirectToPage("Index");
         }
     }

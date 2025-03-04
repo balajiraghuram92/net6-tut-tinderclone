@@ -22,6 +22,7 @@ namespace WebApplication_razar.Pages.Categories
         {
             _db.Categories.Add(categ);
             _db.SaveChanges();
+            TempData["success"] = "Category created succussfully";
             return RedirectToPage("Index");
 
         }

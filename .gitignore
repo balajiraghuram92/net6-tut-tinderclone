@@ -15,3 +15,13 @@ WebApplication1/obj/Debug/net8.0/WebApplication1.GeneratedMSBuildEditorConfig.ed
 WebApplication1/obj/project.assets.json
 WebApplication1/obj/project.nuget.cache
 WebApplication1/obj/WebApplication1.csproj.nuget.dgspec.json
+/liquipages/liquipages.dataaccess/bin
+/liquipages/.idea
+/liquipages/liquipages.dataaccess/Migrations
+/liquipages/liquipages.dataaccess/obj
+/liquipages/liquipages.models/bin
+/liquipages/liquipages.models/obj
+/liquipages/liquipages.utilities/bin
+/liquipages/liquipages.utilities/obj
+/liquipages/liquipages/bin
+/liquipages/liquipages/obj

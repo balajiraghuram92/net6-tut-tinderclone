@@ -1,0 +1,5 @@
+{
+    "dataworkspace.excludedProjects": [
+        "liqui-sql/liqui-sql.sqlproj"
+    ]
+}
